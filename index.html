@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Dave Lang | Web dev</title>
+  <meta name="description" content="">
+  <meta name="author" content="Dave Lang">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Roboto|Passion+One" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––s––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/base.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.js" type="text/javascript"></script>
+<script>
+function easeInOutQuart( t ) {
+  const t1 = t - 1
+  return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * t1 * t1 * t1 * t1
+}
+function smoothScroll(el, to, duration) {
+  var initial = $(window).scrollTop()
+  var dest = to - initial
+  var start = null
+  function step (timestamp) {
+    if (!start) start = timestamp
+    var progress = timestamp - start
+    var percentage = progress / duration
+    var tick = (easeInOutQuart(percentage) * dest) + initial
+    window.scrollTo(0, tick)
+    if (progress < duration) { window.requestAnimationFrame(step) }
+    else { return }
+  }
+  window.requestAnimationFrame(step)
+}
+
+$(function()
+{
+  $('.scrollTo').on('click', function(e) {
+  e.preventDefault();
+  smoothScroll($(window), $($(e.currentTarget).attr('href')).offset().top, 600);
+});
+});
+</script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+</head>
+<body>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="landing-page">
+    <div class="page-overlay"></div>
+
+    <div class="container" >
+      <div class="row pb-2">
+        <div class="twelve columns">
+            <h1>Hi! I'm David Lang</h1>
+            <p class="terrible-tagline">I'm a code monkey who likes to get outside</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="down-we-go">
+      <a href="#what-i-do" class="scrollTo">
+      <svg width="2048" height="2048" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1523 992q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23zm0-384q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z" style="fill: rgb(255, 255, 255);"/>
+      </svg>
+    </a>
+    </div>
+  </div>
+
+  <div id="what-i-do">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h2>I'm working with</h2>
+          <ul class="list-style-none">
+            <li><strong>Modern JS &amp; CSS frameworks</strong><br>jQuery (and Zepto), Bootstrap</li>
+            <li><strong>Java</strong><br>Spring, WebObjects</li>
+            <li><strong>PHP</strong><br>Laravel/Lumen</li>
+            <li><strong>Content management systems</strong><br>Squiz CMS, WordPress</li>
+            <li><strong>DevOps Tools</strong><br>Vagrant, Docker, Git
+          <ul>
+        </div>
+        <div class="one-half column">
+          <h2>Currently experimenting on</h2>
+          <ul class="list-style-none">
+            <li>WebVR &amp; WebAR</li>
+            <li>AWS Lambda</li>
+            <li>YourLS</li>
+          </ul>
+        </div>
+      <div>
+  </div>
+
+  <div class="find-me-on">
+      <h2 class="sr-only">Find me on</h2>
+      <ul class="list-style-none">
+      <li><a href="https://www.linkedin.com/in/dave-lang-76b7295b/"><img src="images/In-White-34px-TM.png" alt="LinkedIn" /></a></li>
+      <li><a href="https://github.com/davoaust"><img src="images/GitHub-Mark-Light-32px.png" alt="Github" /></a></li>
+      <li><a href="mailto:hello@dave-lang.com"><img src="images/email.png" alt="Email" /></a> </li>
+    </ul>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
