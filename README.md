@@ -2,7 +2,7 @@
 
 This is an initial placeholder - it needs clean up & quite possibly the death of skeleton-sass.
 
-What better basis for a simple site than Skeleton-Sass, check out <http://getskeleton.com> for documentation and details.
+Initial repo was based on Skeleton-SASS. Can probably remove most of it now.
 
 ## Getting started
 
@@ -16,3 +16,7 @@ What better basis for a simple site than Skeleton-Sass, check out <http://getske
   * cd to project folder
   * run `[sudo] npm install`
   * run `grunt` (to watch and compile sass files)
+
+### Grunt tasks
+  * `grunt` see above
+  * `grunt build` package up the site ready for upload to provider
