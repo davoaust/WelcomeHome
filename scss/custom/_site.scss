@@ -1,4 +1,5 @@
 @mixin page {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   user-select: none;
@@ -55,7 +56,7 @@ body {
   }
 
   h1 {
-    line-height: 0.5;
+    line-height: 0.8;
   }
 
   .terrible-tagline {
@@ -84,12 +85,25 @@ body {
   }
 }
 
+.up-we-go {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+
+  svg {
+    transform: rotate(180deg);
+    height: 50px;
+    width: 50px;
+
+    &:hover {
+      // transform: scale(1.1)
+      //animation: bounce 2s infinite;
+    }
+  }
+}
+
 .find-me-on {
   position: fixed;
-  top: 3rem;
-  right: 1rem;
-
-  width: 5rem;
 
   img {
     padding-bottom: 1rem;
@@ -97,6 +111,29 @@ body {
     &:hover {
       transition-timing-function: ease-in;
       transform: scale(1.1);
+    }
+  }
+
+  @media (#{$bp-smaller-than-tablet}) {
+    top: 1rem;
+    right: 1rem;
+    height: 5rem;
+
+    li {
+      display: inline-block;
+
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (#{$bp-larger-than-phablet}) {
+    top: 3rem;
+    right: 1rem;
+
+    width: 5rem;
+
+    li {
+      display: inline-block;
     }
   }
 }

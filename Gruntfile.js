@@ -67,7 +67,7 @@ module.exports = function(grunt) {
           },
 
           clean: {
-            dist: ['build', 'dist/']
+            dist: ['build', 'dist.zip']
           },
 
           compress: {
