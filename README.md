@@ -2,12 +2,12 @@
 
 This is an initial placeholder - it needs clean up & quite possibly the death of skeleton-sass.
 
-Initial repo was based on Skeleton-SASS. Can probably remove most of it now.
+Initial repo was based on Skeleton-SASS. I can probably remove most of it now as I never used it - the site went down a different path.
 
 ## Getting started
 
 ### Install Global Dependencies
-  * [Node.js](http://nodejs.org)
+  * [Node.js](http://nodejs.org) [Installation via package manager](https://nodejs.org/en/download/package-manager/)
   * [bower](http://bower.io): `[sudo] npm install bower -g`
   * [grunt.js](http://gruntjs.com): `[sudo] npm install -g grunt-cli`
 

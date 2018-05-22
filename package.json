@@ -1,24 +1,18 @@
 {
-  "name": "skeleton-scss",
-  "version": "2.0.4",
-  "description": "The (un)official Sass Version of Skeleton (2.0.4): A Dead Simple, Responsive Boilerplate for Mobile-Friendly Development",
+  "name": "welcome-home",
+  "version": "0.0.1",
+  "description": "The placeholder for Dave Lang's home on the internet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass"
+    "url": "https://github.com/davoaust/WelcomeHome"
   },
   "bugs": {
-    "url": "https://github.com/WhatsNewSaes/Skeleton-Sass/issues"
+    "url": "https://github.com/davoaust/WelcomeHome/issues"
   },
-  "homepage": "https://github.com/whatsnewsaes/Skeleton-Sass",
-  "author": "Seth Coelen <scoelen89@gmail.com>  (http://sethcoelen.com/)",
+  "homepage": "dave-lang.com",
+  "author": "David Lang <dave@dave-lang.com>  (http://dave-lang.com/)",
   "keywords": [
-    "skeleton",
-    "sass",
-    "scss",
-    "responsive",
-    "boilerplate"
   ],
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "cssnano": "^3.10.0",
