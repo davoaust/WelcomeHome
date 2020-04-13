@@ -74,6 +74,12 @@ body {
 #what-i-do {
   @include page;
   @include center-flex;
+
+  padding-top: 6rem;
+
+  @media (#{$bp-larger-than-phablet}) {
+      padding-top: inherit;
+  }
 }
 
 .down-we-go {
