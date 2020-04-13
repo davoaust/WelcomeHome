@@ -1,13 +1,13 @@
 {
   "name": "welcome-home",
-  "version": "0.0.1",
+  "version": "1.0",
   "description": "The placeholder for Dave Lang's home on the internet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davoaust/WelcomeHome"
+    "url": "https://github.com/dave-lang/WelcomeHome"
   },
   "bugs": {
-    "url": "https://github.com/davoaust/WelcomeHome/issues"
+    "url": "https://github.com/dave-lang/WelcomeHome/issues"
   },
   "homepage": "dave-lang.com",
   "author": "David Lang <dave@dave-lang.com>  (http://dave-lang.com/)",
